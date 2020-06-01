@@ -29,10 +29,10 @@ sub check_video_fetch_url {
     is $code, 200;
 }
 
-# YAPC video 1	
+# YAPC video 1
 check_video_fetch_url('Y1I1KcKvz9Q');
 
-# YAPC video 2 
+# YAPC video 2
 check_video_fetch_url('oAkasBMJJ18');
 
 done_testing;

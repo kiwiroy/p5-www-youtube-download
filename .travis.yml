@@ -1,5 +1,6 @@
 ---
 dist: trusty
+os: linux
 addons:
   apt:
     packages:
@@ -23,12 +24,12 @@ perl:
 cache:
   directories:
     - "~/perl5"
-matrix:
+jobs:
   allow_failures:
     - perl: blead
     - perl: dev
     - env: P5_YOUTUBE_NETWORK_TESTS=1
-  fast_finish: 1
+  fast_finish: true
   include:
     - env: COVERAGE=1
       perl: "5.30"
@@ -40,6 +41,7 @@ env:
     - RELEASE_TESTING=1
 before_install:
   - eval $(curl https://travis-perl.github.io/init) --auto --always-upgrade-modules
+  - cpanm -n -q Perl::Critic::Policy::ValuesAndExpressions::ProhibitAccessOfPrivateData
 notifications:
   email:
     on_failure: always
