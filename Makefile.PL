@@ -41,6 +41,7 @@ my %WriteMakefileArgs = (
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
+    "Mock::Quick" => 0,
     "Test::More" => 0
   },
   "VERSION" => "0.63",
