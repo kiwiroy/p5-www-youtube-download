@@ -60,6 +60,7 @@
             "HTTP::Request" : "0",
             "JSON::MaybeXS" : "0",
             "LWP::UserAgent" : "0",
+            "MIME::Type" : "0",
             "Pod::Usage" : "0",
             "Term::ANSIColor" : "0",
             "Time::HiRes" : "0",
@@ -79,6 +80,7 @@
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
+            "Mock::Object" : "0",
             "Test::More" : "0",
             "perl" : "5.008001"
          }
@@ -795,4 +797,3 @@
    "x_serialization_backend" : "Cpanel::JSON::XS version 4.10",
    "x_static_install" : 1
 }
-
